@@ -1,6 +1,9 @@
 import openai
 
-API_KEY = 'INSERT KEY HERE'
+f = open('apikey.txt')
+API_KEY = f.read()
+f.close()
+
 openai.api_key = API_KEY
 
 model = 'text-davinci-003'
