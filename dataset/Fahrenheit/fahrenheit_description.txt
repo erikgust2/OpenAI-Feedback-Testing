@@ -1,0 +1,1 @@
+The following program is supposed to ask the user for a temperature in celsius. It then converts it to fahrenheit and prints the result. Additionally, if the temperature exceeds 90, it also prints "It's hot!". If it is below 32, it prints "It's cold!". Otherwise, it prints "It's just right!". However, there is one error. Can you find it?

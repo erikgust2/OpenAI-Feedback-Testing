@@ -1,8 +1,0 @@
-In this implementation, the mistakes are intentional and include:
-
-- Instead of finding the minimum element, we're finding the maximum element in the unsorted array.
-- Instead of swapping the minimum element with the first element, we're swapping the maximum element with the last element.
-- We're always swapping the maximum element with the last element, even if the maximum element is already at the end of the array.
-
-These mistakes will cause the algorithm to sort the array in descending order instead of ascending order, and may 
-lead to incorrect results or an infinite loop if the maximum element is already at the end of the array.

@@ -11,8 +11,3 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
     return arr
-
-# Test
-arr = [64, 25, 12, 22, 11]
-sorted_arr = selection_sort(arr)
-print(sorted_arr) # Output: [11, 12, 22, 25, 64]
