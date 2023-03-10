@@ -1,0 +1,1 @@
+The following program is supposed to take the height and width of a triangle and return its area. If any of the values are zero or negative, it should throw a 'ValueError'. Is it correctly implemented?

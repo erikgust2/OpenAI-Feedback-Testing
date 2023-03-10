@@ -1,0 +1,1 @@
+The following program should take two sorted lists of integers as input and return a new sorted list that contains all the elements from both input lists, also in sorted order. If either of the input lists is empty, the function should return the other list. Is it correctly implemented?

@@ -1,0 +1,1 @@
+The following function should take a non-negative integer, calculate the factorial of that integer and return the result. Is it correctly implemented?

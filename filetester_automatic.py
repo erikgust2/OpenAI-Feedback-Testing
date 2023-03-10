@@ -15,12 +15,12 @@ openai.api_key = API_KEY
 model = 'text-davinci-003'
 
 # Edit these to change the categories of the query
-categories = ['BMI', 'Fahrenheit', 'Sorting', 'Sum']
+categories = ['AgeName', 'Average', 'BMI', 'Factorial', 'Fahrenheit', 'MergeSorted', 'Prime', 'Sorting', 'Sum', 'Triangle']
 
 # Creates the output file
 outputFile = open(outputFileName, 'w')
 
-# Prompts OPENAI to generate a response for each file in each category
+# Prompts OPENAI to generate a response for each python file in each category
 for category in categories:
 
     # Writes the category name to the output file to signify a new category
@@ -45,6 +45,7 @@ for category in categories:
             f.close()
 
             # Generating a response from OpenAI
+            # For higher variety in responses, increase the temperature
             response = openai.Completion.create(
                 prompt = prompt,
                 model = model,
