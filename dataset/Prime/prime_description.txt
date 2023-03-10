@@ -1,1 +1,1 @@
-The following program is supposed to take an integer as input and caluculate whether it is a prime number. If it is, it should return True, otherwise it should return False. Is this correctly implemented?
+The following program is supposed to take an integer as input and calculate whether it is a prime number. If it is, it should return True, otherwise it should return False. Is this correctly implemented?
