@@ -1,1 +1,1 @@
-The following program is supposed to ask the user for the height and weight. It then calculates their BMI, which BMI category it belongs to and printing the result. However, there is one error. Can you find it?
+The following program is supposed to ask the user for the height and weight. It then calculates their BMI, which BMI category it belongs to and printing the result. Is this correctly implemented?

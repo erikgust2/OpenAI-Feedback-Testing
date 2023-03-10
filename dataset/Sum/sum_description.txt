@@ -1,0 +1,1 @@
+The following program is supposed to take an array of integers as input, sum them up and finally returning that sum. If the value at any index of the array is not an integer, it should throw an error. Is it correctly implemented?

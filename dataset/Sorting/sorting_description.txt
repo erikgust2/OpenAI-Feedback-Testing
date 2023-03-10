@@ -1,1 +1,1 @@
-The following program is supposed to implement selection sort in python. It takes an array of integers, sorts them and returns the sorted array, but there is one error. Can you find it?
+The following program is supposed to implement selection sort in python. It takes an array of integers, sorts them and returns the sorted array. Is this correctly implemented?

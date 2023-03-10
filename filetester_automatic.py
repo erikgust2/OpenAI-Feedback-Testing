@@ -15,7 +15,7 @@ openai.api_key = API_KEY
 model = 'text-davinci-003'
 
 # Edit these to change the categories of the query
-categories = ['BMI', 'Fahrenheit', 'Sorting']
+categories = ['BMI', 'Fahrenheit', 'Sorting', 'Sum']
 
 # Creates the output file
 outputFile = open(outputFileName, 'w')
@@ -49,7 +49,7 @@ for category in categories:
                 prompt = prompt,
                 model = model,
                 max_tokens=1000,
-                temperature=0.7,
+                temperature=0.2,
                 n=1
             )
 
