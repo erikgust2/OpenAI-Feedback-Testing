@@ -15,7 +15,7 @@ API_KEY = f.read()
 f.close()
 openai.api_key = API_KEY
 
-# Enter the language model you wish to use. Default is the latest and most complicated model - DaVinci
+# Enter the language model you wish to use. Default is GPT-3.5 Turbo
 model = 'gpt-3.5-turbo'
 
 # Edit these to change the categories of the query
@@ -40,6 +40,7 @@ for category in categories:
 
         # Ignores the description file
         if file.endswith('.py'):
+
             # Writes the file name to the output file to signify a new file
             outputFile.write(file + '\n\n')
             f = open('dataset/' + category + '/' + file)
