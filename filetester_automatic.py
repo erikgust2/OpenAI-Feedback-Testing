@@ -49,8 +49,8 @@ for category in categories:
             response = openai.Completion.create(
                 prompt = prompt,
                 model = model,
-                max_tokens=1000,
-                temperature=0.2,
+                max_tokens=2000,
+                temperature=0.5,
                 n=1
             )
 
