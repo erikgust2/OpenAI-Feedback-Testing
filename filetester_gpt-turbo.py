@@ -1,8 +1,12 @@
 import os
 import openai
+import time
+
+# Measures the time taken to run the program
+start_time = time.time()
 
 # Name of the output file. Change this to whatever you want.
-outputFileName = 'output.txt'
+outputFileName = 'output_turbo.txt'
 
 # Gets OpenAI API key from api.txt
 # NOTE: YOU HAVE TO MANUALLY ADD THIS TEXTFILE WITH YOUR OWN KEY
@@ -12,7 +16,7 @@ f.close()
 openai.api_key = API_KEY
 
 # Enter the language model you wish to use. Default is the latest and most complicated model - DaVinci
-model = 'text-davinci-003'
+model = 'gpt-3.5-turbo'
 
 # Edit these to change the categories of the query
 categories = ['AgeName', 'Average', 'BMI', 'Factorial', 'Fahrenheit', 'MergeSorted', 'Prime', 'Sorting', 'Sum', 'Triangle']
@@ -45,19 +49,20 @@ for category in categories:
             f.close()
 
             # Generating a response from OpenAI
-            # For higher variety in responses, increase the temperature
-            response = openai.Completion.create(
-                prompt = prompt,
+            response = openai.ChatCompletion.create(
                 model = model,
-                max_tokens=2000,
-                temperature=0.5,
-                n=1
+                messages = [
+                    {'role': 'system', 'content': 'You are a helpful programming instructor for beginners.'},
+                    {'role': 'user', 'content': prompt}
+                ]
             )
 
             # Writes the response to the output file
             for choice in response.choices:
-                outputFile.write(choice.text + '\n\n' + '------------------------' + '\n\n')
+                outputFile.write(choice.message.content + '\n\n' + '------------------------' + '\n\n')
 
 outputFile.close()
 
 print("Done! Output written to " + outputFileName + ".")
+
+print("Time taken: " + str(time.time() - start_time) + " seconds")
