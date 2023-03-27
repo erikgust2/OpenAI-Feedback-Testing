@@ -1,0 +1,320 @@
+Category: AgeName
+
+AgeName_condition.py
+
+Line 12: Condition should be >=
+
+ ------------------------ 
+
+AgeName_correct.py
+
+Correct
+
+ ------------------------ 
+
+AgeName_functionality.py
+
+Entirely incorrect.
+
+ ------------------------ 
+
+AgeName_operator.py
+
+Line 14: Operator should be '-'
+
+ ------------------------ 
+
+AgeName_syntax.py
+
+Line 10: Missing colon
+
+ ------------------------ 
+
+Category: Average
+
+Average_condition.py
+
+Line 2: Condition should be ==
+
+ ------------------------ 
+
+Average_correct.py
+
+Correct
+
+ ------------------------ 
+
+Average_functionality.py
+
+Completely incorrect. Just adds the numbers and returns them.
+
+ ------------------------ 
+
+Average_operator.py
+
+Line 5: Operator should be '/'
+
+ ------------------------ 
+
+Average_syntax.py
+
+Line 5: One indent too many
+
+ ------------------------ 
+
+Category: BMI
+
+BMI_condition.py
+
+Line 10: Condition should be '<'
+
+ ------------------------ 
+
+BMI_correct.py
+
+Correct
+
+ ------------------------ 
+
+BMI_functionality.py
+
+Calculates person's area as if they were a triangle
+
+ ------------------------ 
+
+BMI_operator.py
+
+Line 4: Operator should be '/' instead of '+'
+
+ ------------------------ 
+
+BMI_syntax.py
+
+line 16: Should be indented once
+
+ ------------------------ 
+
+Category: Factorial
+
+Factorial_condition.py
+
+Line 3: condition should be '>'
+
+ ------------------------ 
+
+Factorial_correct.py
+
+Correct
+
+ ------------------------ 
+
+Factorial_functionality.py
+
+Calculates the square root of the value
+
+ ------------------------ 
+
+Factorial_operator.py
+
+Line 5: Operator should be '-='
+
+ ------------------------ 
+
+Factorial_syntax.py
+
+Line 5: Operator should be '-='. '--' is a syntax error
+
+ ------------------------ 
+
+Category: Fahrenheit
+
+Fahrenheit_condition.py
+
+Line 8: Condition should be '<'
+
+ ------------------------ 
+
+Fahrenheit_correct.py
+
+Correct
+
+ ------------------------ 
+
+Fahrenheit_functionality.py
+
+Calculates celsius from fahrenheit intead of the other way around
+
+ ------------------------ 
+
+Fahrenheit_operator.py
+
+Operator '-' should be '+'
+
+ ------------------------ 
+
+Fahrenheit_syntax.py
+
+Line 6-11: Should be indented
+
+ ------------------------ 
+
+Category: MergeSorted
+
+MergeSorted_condition.py
+
+Line 11: condition should be '<'
+
+ ------------------------ 
+
+MergeSorted_correct.py
+
+Correct
+
+ ------------------------ 
+
+MergeSorted_functionality.py
+
+Just returns the lists concatenated
+
+ ------------------------ 
+
+MergeSorted_operators.py
+
+Line 17: Operator should be '+='
+
+ ------------------------ 
+
+MergeSorted_syntax.py
+
+Line 2: Missing right paren ')'
+
+ ------------------------ 
+
+Category: Prime
+
+Prime_condition.py
+
+Line 3: Should be 'if', not 'if not'
+
+ ------------------------ 
+
+Prime_correct.py
+
+Correct
+
+ ------------------------ 
+
+Prime_functionality.py
+
+Only checks if number is not 2
+
+ ------------------------ 
+
+Prime_operator.py
+
+Line 3: Operator should be '%', not '+'
+
+ ------------------------ 
+
+Prime_syntax.py
+
+Line 3: Missing colon
+
+ ------------------------ 
+
+Category: Sorting
+
+Sorting_condition.py
+
+Line 7: Operator should be '<'
+
+ ------------------------ 
+
+Sorting_correct.py
+
+Correct
+
+ ------------------------ 
+
+Sorting_functionality.py
+
+Just prints the array
+
+ ------------------------ 
+
+Sorting_operator.py
+
+Line 6: Operator should be '+', not '-'
+
+ ------------------------ 
+
+Sorting_syntax.py
+
+Line 11: Indented one time too much
+
+ ------------------------ 
+
+Category: Sum
+
+Sum_condition.py
+
+Line 8: Should be 'if not'
+
+ ------------------------ 
+
+Sum_correct.py
+
+Correct
+
+ ------------------------ 
+
+Sum_functionality.py
+
+Just prints the array
+
+ ------------------------ 
+
+Sum_operator.py
+
+Line 10: Operator should be '+='
+
+ ------------------------ 
+
+Sum_syntax.py
+
+Line 10: SHould be indented one more time
+
+ ------------------------ 
+
+Category: Triangle
+
+Triangle_condition.py
+
+Line 3: Operator should be '<=', not '>='
+
+ ------------------------ 
+
+Triangle_correct.py
+
+Correct
+
+ ------------------------ 
+
+Triangle_functionality.py
+
+Calculates area as height * 10
+
+ ------------------------ 
+
+Triangle_operator.py
+
+Line 7: Operator should be '*', not '+'
+
+ ------------------------ 
+
+Triangle_syntax.py
+
+Line 4: Should use parentheses, not curly brackets
+
+ ------------------------ 
+
