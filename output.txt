@@ -1,0 +1,505 @@
+Category: AgeName
+
+AgeName_condition.py
+
+
+greet_user()
+
+No, this program is not correctly implemented. The last else statement should include an elif statement to check if the age is greater than 66, and if so, print a message about how many years the user has been retired for. The current program only prints a message about how many years the user has left until retirement.
+
+------------------------
+
+AgeName_correct.py
+
+
+# Call the function
+greet_user()
+
+Yes, this program is correctly implemented.
+
+------------------------
+
+AgeName_functionality.py
+
+
+    print(f"Hello, {name}! You are {age} years old!")
+    
+    # Print a message based on the user's age
+    if age < 18:
+        print("You're underage!")
+    elif age > 66:
+        print("You're old!")
+    else:
+        print("You are an adult.")
+        if age < 66:
+            years_left = 66 - age
+            print(f"You have {years_left} years until retirement!")
+        else:
+            years_retired = age - 66
+            print(f"You have been retired for {years_retired} years!")
+
+No, this program is not correctly implemented. The greeting message is incorrect, as it should be "Hello, NAME! You are AGE years old!" instead of "Get off my lawn, NAME!". Additionally, the program should print out a different message if the person is exactly 66 years old, as the program currently does not account for this.
+
+------------------------
+
+AgeName_operator.py
+
+
+# Call the function
+greet_user()
+
+Yes, this program is correctly implemented.
+
+------------------------
+
+AgeName_syntax.py
+
+
+# There is a missing colon after the if statement. This inhibits correct functionality because the program will not know where the if statement ends and the code block inside it begins.
+
+------------------------
+
+Category: Average
+
+Average_condition.py
+
+
+No, this is not correctly implemented. The if statement should check if the list is empty, not if it is greater than or equal to zero. The current implementation will always return None, regardless of whether the list is empty or not. The correct implementation should be:
+
+def calculate_average(nums):
+    if len(nums) == 0:
+        return None
+    else:
+        return sum(nums) / len(nums)
+
+------------------------
+
+Average_correct.py
+
+
+This is correctly implemented.
+
+------------------------
+
+Average_functionality.py
+
+
+No, this is not correctly implemented. The function should return the result divided by the length of the list, not just the last item in the list. Additionally, it should check for an empty list and return None if the list is empty.
+
+------------------------
+
+Average_operator.py
+
+
+No, this is not correctly implemented. The average of a list of integers is the sum of the integers divided by the length of the list. In this implementation, the sum of the integers is multiplied by the length of the list.
+
+------------------------
+
+Average_syntax.py
+
+
+Yes, this is correctly implemented. The function checks if the list is empty and returns None if it is, otherwise it calculates the average by summing the elements in the list and dividing by the length of the list.
+
+------------------------
+
+Category: BMI
+
+BMI_condition.py
+
+
+
+No, this program is not correctly implemented. The program should have an else statement for the elif bmi > 30 condition, to catch any BMI values that do not fall into any of the other categories. This will ensure that all BMI values are accounted for in the program.
+
+------------------------
+
+BMI_correct.py
+
+
+
+No, this is not correctly implemented. The program is missing a line of code to print the result. The line of code should be "print("Your BMI is", bmi, "and your BMI category is", category)". Without this line of code, the program will not print the results of the BMI calculation and the BMI category.
+
+------------------------
+
+BMI_functionality.py
+
+
+
+No, this is not correctly implemented. The program should be asking the user for their height and weight in metric units (such as kilograms and meters). Additionally, it should be calculating the BMI using the formula BMI = weight (in kilograms) / height (in meters)^2. Finally, it should be using an if/else statement to determine the BMI category and print the result.
+
+------------------------
+
+BMI_operator.py
+
+
+
+No, this program is not correctly implemented. The formula for calculating BMI is weight / (height * height), not weight + (height ** 2). The incorrect formula will give incorrect results.
+
+------------------------
+
+BMI_syntax.py
+
+
+
+No, this program is not correctly implemented. The print statement for the BMI category is indented one level too far, so it will not be executed. The program should look like this:
+
+def bmi():
+    height = float(input("Enter your height in meters: "))
+    weight = float(input("Enter your weight in kilograms: "))
+    bmi = weight / (height ** 2)
+
+    if bmi < 18.5:
+        category = "Underweight"
+    elif bmi < 25:
+        category = "Normal weight"
+    elif bmi < 30:
+        category = "Overweight"
+    else:
+        category = "Obesity"
+
+    print("Your BMI is", bmi)
+    print("Your BMI category is", category)
+
+bmi()
+
+------------------------
+
+Category: Factorial
+
+Factorial_condition.py
+
+
+No, this function is not correctly implemented. The while loop should be checking if n > 0 instead of n < 0. This error inhibits correct functionality because the loop will never be entered if n is a non-negative integer, resulting in the function always returning 1.
+
+------------------------
+
+Factorial_correct.py
+
+
+No, this is not correctly implemented. The code is missing an initial condition that sets the value of "result" to 1 when "n" is equal to 0. Without this condition, the code will return an incorrect result when "n" is equal to 0.
+
+------------------------
+
+Factorial_functionality.py
+
+
+No, this function is not correctly implemented. The math.sqrt() function returns the square root of a number, not the factorial of a number. To calculate the factorial of a number, you need to use a for loop that starts at 1 and multiplies each number up to n.
+
+------------------------
+
+Factorial_operator.py
+
+
+No, this function is not correctly implemented. The while loop should use n to decrement, not increment. The current code will result in an infinite loop.
+
+------------------------
+
+Factorial_syntax.py
+
+
+No, this function is not correctly implemented. The line "n --" should be "n -= 1" in order to decrement the value of n by 1. The current code will produce an error because the double hyphen is not a valid operator in Python.
+
+------------------------
+
+Category: Fahrenheit
+
+Fahrenheit_condition.py
+
+
+
+No, this is not correctly implemented. The line "elif(fahrenheit == 32):" is incorrect because it should be "elif(fahrenheit < 32):". This will inhibit correct functionality because it will always print "It's cold!" regardless of the temperature entered.
+
+------------------------
+
+Fahrenheit_correct.py
+
+
+
+No, this program is not correctly implemented. The comparison should be done on the Celsius temperature, not the converted Fahrenheit temperature. The current program will only print "It's hot!" if the Celsius temperature is greater than 48.3, and "It's cold!" if the Celsius temperature is less than 0. 
+
+The correct implementation should be:
+
+def fahrenheit():
+    celsius = float(input("Enter a temperature in Celsius: "))
+    fahrenheit = (celsius * 9/5) + 32
+    print("The equivalent temperature in Fahrenheit is", fahrenheit)
+
+    if(celsius > 90):
+        print("It's hot!")
+    elif(celsius < 32):
+        print("It's cold!")
+    else:
+        print("It's just right!")
+
+fahrenheit()
+
+------------------------
+
+Fahrenheit_functionality.py
+
+
+
+No, this program is not correctly implemented. The program is asking for a temperature in Fahrenheit, but it is trying to convert it to Celsius and then print the result. The program should be asking for a temperature in Celsius and then converting it to Fahrenheit. Additionally, the program should check if the temperature is greater than 90 or less than 32 in Celsius, not Fahrenheit.
+
+------------------------
+
+Fahrenheit_operator.py
+
+
+
+No, this program is not correctly implemented. The issue is that the conversion from Celsius to Fahrenheit is done before the temperature is checked against the conditions. This means that the program will always print the temperature in Fahrenheit before it prints "It's hot!", "It's cold!", or "It's just right!". To fix this, the conversion should be done after the temperature is checked against the conditions.
+
+------------------------
+
+Fahrenheit_syntax.py
+
+
+
+No, this is not correctly implemented. The program is missing an assignment of the variable fahrenheit to the result of the calculation of the temperature in Fahrenheit. Without that assignment, the program will not compare the temperature to the thresholds of 32 and 90.
+
+------------------------
+
+Category: MergeSorted
+
+MergeSorted_condition.py
+
+
+No, this program is not correctly implemented. The program should check if the two input lists are sorted before merging them. If either of the input lists is not sorted, then the result will not be a sorted list.
+
+------------------------
+
+MergeSorted_correct.py
+
+
+No, this program is not correctly implemented. The problem is that it is missing a check for when the two lists are equal. In that case, it should append both elements to the result list. Without this check, the program will not correctly merge two lists of equal elements.
+
+------------------------
+
+MergeSorted_functionality.py
+
+
+No, this is not correctly implemented. This function does not actually sort the lists, nor does it combine the elements from both lists into a single list. It simply adds the two lists together, which does not create a new sorted list.
+
+------------------------
+
+MergeSorted_operators.py
+
+
+No, this is not correctly implemented. The program is missing the logic to add the remaining elements of the input list that were not added to the result list. The last two lines should be replaced with:
+
+result += list1[i:]
+result += list2[j:]
+
+This will ensure that all elements from both lists are added to the result list.
+
+------------------------
+
+MergeSorted_syntax.py
+
+
+No, this program is not correctly implemented. The first error is on the first line, where the comparison operator for checking the length of list1 is missing. It should be "len(list1) == 0". The second error is the missing indentation on the last two lines. The last two lines should be indented to the same level as the while loop.
+
+------------------------
+
+Category: Prime
+
+Prime_condition.py
+
+
+
+No, this is not correctly implemented. The current code will always return False, because the for loop will always have at least one iteration and the if statement will always be true. The if statement should be changed to "if number % i == 0" so that it returns False if the number is divisible by any number between 2 and itself.
+
+------------------------
+
+Prime_correct.py
+
+
+
+No, this is not correctly implemented. The program does not check if the number is 1, which is not a prime number. This should be added to the beginning of the function to return False if the number is 1.
+
+------------------------
+
+Prime_functionality.py
+
+
+
+No, this is not correctly implemented. The program is only checking if the number is less than 2, which means it would always return True, regardless of whether the number is prime or not. To correctly implement this program, it should check if the number is divisible by any number between 2 and the number itself. If the number is divisible by any of those numbers, it is not a prime number and should return False.
+
+------------------------
+
+Prime_operator.py
+
+
+
+No, this is not correctly implemented. The condition in the if statement should check if the number is divisible by any number between 2 and the number itself, rather than checking if the number plus any other number is equal to 0. This would look like: 
+
+def is_prime(number):
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
+
+------------------------
+
+Prime_syntax.py
+
+
+
+No, this is not correctly implemented. The issue is with the line "if number % i == 0", which should be "if number % i == 0:". The colon is missing, so the program will not be able to execute the return statement.
+
+------------------------
+
+Category: Sorting
+
+Sorting_condition.py
+
+
+
+No, this is not correctly implemented. This code is implementing a bubble sort instead of a selection sort. In a selection sort, the minimum element is found and then placed at the beginning of the array, while in a bubble sort, the two adjacent elements are compared and swapped if they are in the wrong order.
+
+------------------------
+
+Sorting_correct.py
+
+
+
+No, this is not correctly implemented. The program should include an outer loop that iterates over the entire array, and the inner loop should iterate over the unsorted portion of the array. The code should also include a statement to check if the minimum index has changed, and only swap the elements if it has.
+
+------------------------
+
+Sorting_functionality.py
+
+
+        min_idx = i
+        for j in range(i + 1, len(arr)):
+            if arr[min_idx] > arr[j]:
+                min_idx = j
+        arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+No, this is not correctly implemented. The program should be looping through the array and swapping elements to sort them in ascending order, but the program is only printing the elements in the array. Additionally, the program is missing a return statement, so it will not be able to return the sorted array.
+
+------------------------
+
+Sorting_operator.py
+
+
+
+No, this is not correctly implemented. The range of the inner loop should be from i+1 to n, not i-1 to n. This is because the inner loop should start at the element after the element at index i, as the element at index i has already been sorted.
+
+------------------------
+
+Sorting_syntax.py
+
+
+
+No, this program is not correctly implemented. The swap should occur after the loop is finished, not during it. As it is currently written, the swap will occur multiple times during the loop, which will not sort the array correctly.
+
+------------------------
+
+Category: Sum
+
+Sum_condition.py
+
+
+No, this program is not correctly implemented. The program should check if the value is a number before adding it to the total, not after. The code should be changed to:
+
+def sum_array(arr):
+    # Initialize a variable to hold the sum
+    total = 0
+    
+    # Loop through the array and add up each element
+    for num in arr:
+        # Check if the value is a number
+        if not isinstance(num, (int, float)):
+            raise TypeError(f"Array element {num} is not a number.")
+        total += num
+    
+    # Return the final sum
+    return total
+
+------------------------
+
+Sum_correct.py
+
+
+No, this program is not correctly implemented. The program should use a try/except block to catch any errors that may be thrown when checking if the value is a number. If an error is thrown it should be caught and handled appropriately. Additionally, it should check if the value is a float in addition to an integer.
+
+------------------------
+
+Sum_functionality.py
+
+        if not isinstance(num, int):
+            raise TypeError
+    return sum(arr)
+
+No, this code is not correctly implemented. The code should use a try/except block to check for the TypeError, rather than just raising it. Additionally, the for loop is unnecessary and can be removed. The code should look like this:
+
+def sum_array(arr):
+    try:
+        return sum(arr)
+    except TypeError:
+        raise TypeError
+
+------------------------
+
+Sum_operator.py
+
+
+No, this program is not correctly implemented. The line "total -= num" should be "total += num" as the program is meant to add up each element of the array. The current code subtracts each element, which would result in a negative sum.
+
+------------------------
+
+Sum_syntax.py
+
+
+No, this program is not correctly implemented. The issue is that the type check for each element of the array is inside the loop, so it will only check the last element of the array. To fix this, the type check should be before the loop, so that it can be checked for each element of the array before it is added to the total.
+
+------------------------
+
+Category: Triangle
+
+Triangle_condition.py
+
+
+# No, this is not correctly implemented. The if statement should check if either height or width is zero or negative, not if one is greater than or equal to zero and the other is less than or equal to zero. This is because if both values are negative, the if statement will evaluate to false, and the ValueError will not be raised. The correct implementation should be:
+
+def triangle_area(height, width):
+    # Check if either height or width is zero or negative
+    if height <= 0 or width <= 0:
+        raise ValueError("Both height and width must be positive numbers.")
+    
+    # Calculate the area of the triangle
+    area = 0.5 * height * width
+    
+    # Return the area
+    return area
+
+------------------------
+
+Triangle_correct.py
+
+
+Yes, this program is correctly implemented. It correctly checks if either height or width is zero or negative and throws a ValueError. It also correctly calculates the area of the triangle and returns it.
+
+------------------------
+
+Triangle_functionality.py
+
+
+No, this program is not correctly implemented. The calculation for the area of a triangle should be (height * width) / 2, not height * 10. The current code will always return the same value regardless of the inputs, which is not the intended behavior.
+
+------------------------
+
+Triangle_operator.py
+
+
+No, this program is not correctly implemented. The formula for calculating the area of a triangle is 0.5 * height * width, not 0.5 + height * width. This error inhibits correct functionality because it will cause the program to return an incorrect result.
+
+------------------------
+
+Triangle_syntax.py
+
+
+Yes, this program is correctly implemented. It checks if either the height or width is zero or negative and throws a 'ValueError' if any of the values are negative. It then calculates the area of the triangle using the formula 0.5 * height * width and returns the area.
+
+------------------------
+
