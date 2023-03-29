@@ -224,10 +224,19 @@ Here, we divide the sum of the numbers by the length of the list to get the aver
 
 Average_syntax.py
 
-The implementation looks correct to me. 
-The function first checks if the list is empty by verifying if its length is 0. If the list is empty, the function returns None. Otherwise, the function computes the sum of the given list of integers `sum(nums)` and then divides the sum by the number of elements in the list `len(nums)` to get the average. Finally, the function returns the average.
+This function seems to contain a minor error. The return statement within the else clause is not indented, which will result in a syntax error. The indentation of the return statement should be aligned with that of the else clause.
 
-This implementation will give the average of a list of integers correctly.
+Here's the corrected code:
+
+```
+def calculate_average(nums):
+    if len(nums) == 0:
+        return None
+    else:
+        return sum(nums) / len(nums)
+```
+
+Other than that, the code should work correctly.
 
 ------------------------
 
@@ -1051,4 +1060,3 @@ There is a syntax error in the code. The closing parenthesis on the 'raise Value
 Other than that, the code looks correct and will raise an error if either height or width are zero or negative. If both values are positive, it will correctly calculate and return the area of the triangle.
 
 ------------------------
-

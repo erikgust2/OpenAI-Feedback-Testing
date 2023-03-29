@@ -250,7 +250,7 @@ Line 6: Operator should be '+', not '-'
 
 Sorting_syntax.py
 
-Line 11: Indented one time too much
+Line 11: Indented one time too little
 
  ------------------------ 
 

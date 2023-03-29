@@ -98,7 +98,13 @@ No, this is not correctly implemented. The average of a list of integers is the 
 Average_syntax.py
 
 
-Yes, this is correctly implemented. The function checks if the list is empty and returns None if it is, otherwise it calculates the average by summing the elements in the list and dividing by the length of the list.
+No, this is not correctly implemented. The function should return a float, not an integer. The correct implementation should be:
+
+def calculate_average(nums):
+    if len(nums) == 0:
+        return None
+    else:
+        return float(sum(nums)) / len(nums)
 
 ------------------------
 
@@ -502,4 +508,3 @@ Triangle_syntax.py
 Yes, this program is correctly implemented. It checks if either the height or width is zero or negative and throws a 'ValueError' if any of the values are negative. It then calculates the area of the triangle using the formula 0.5 * height * width and returns the area.
 
 ------------------------
-
